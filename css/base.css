@@ -4,8 +4,9 @@
     border: 0;
 }
 
-body{
-    background-color: turquoise;
+.container{
+    height: 100vh;
+    background: -webkit-linear-gradient(cyan,magenta);
 }
 
 img{
@@ -20,5 +21,7 @@ h1{
     text-align: center;
     color: snow;
     top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
     font-family: 'Amatic SC', cursive;
 }
