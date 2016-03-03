@@ -6,7 +6,7 @@
 
 .container{
     height: 100vh;
-    background: -webkit-linear-gradient(cyan,magenta);
+    background: -webkit-linear-gradient(snow,skyblue);
 }
 
 img{
@@ -19,9 +19,18 @@ img{
 h1{
     position: absolute;
     text-align: center;
-    color: snow;
+    color: darkslateblue;
     top: 60%;
     left: 50%;
     transform: translateX(-50%);
     font-family: 'Amatic SC', cursive;
 }
+
+.top{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+
+
