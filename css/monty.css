@@ -1,0 +1,13 @@
+body{
+    background-color: lightslategray;
+}
+.mainhead{
+    font-style: italic;
+    color: snow;
+    text-align: center;
+    transition: 1s;
+}
+.mainhead:hover{
+    color: black;
+    
+}
