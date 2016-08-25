@@ -5,7 +5,7 @@ body{
     font-style: italic;
     color: snow;
     text-align: center;
-    transition: 1s;
+    transition: .14s;
 }
 .mainhead:hover{
     color: black;

@@ -1,34 +1,52 @@
+
 *{
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
-
+@font-face{
+    font-family: "blowbrush";
+    src: url(../font/blowbrush.otf);
+    font-style: normal;
+    font-weight: normal;
+}
 .container{
-    height: 100vh;
-    background: -webkit-linear-gradient(snow,skyblue);
-}
-
-img{
     position: absolute;
+    width:50vw;
+    height:50vh;
+    font-family: "blowbrush";
+    font-size: 1.8em;
+}
+#div1{
+    background-image: url(../Images/watercolor-backgrounds-10.jpg);
+    background-size: cover;
+    
+}
+#div2{
+    background-image: url(../Images/watercolor-backgrounds-11.jpg);
+    background-size: cover;
+    left: 50vw;
+}
+#div3{
+    background-image: url(../Images/watercolor-backgrounds-16.jpg);
+    background-size: cover;
+    top: 50vh;
+}
+#div4{
+    background-image: url(../Images/watercolor-backgrounds-19.jpg);
+    background-size: cover;
+    top: 50vh;
+    left: 50vw;
+}
+.container h1{
+    position: absolute;
+    top: 50%;
     left: 50%;
-    top: 35%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    color: yellow;
+    transition: .3s ease-in-out;
 }
-
-h1{
-    position: absolute;
-    text-align: center;
-    color: darkslateblue;
-    top: 60%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: 'Amatic SC', cursive;
-}
-
-.top{
-    position: absolute;
-    top: 20px;
-    left: 15px;
-    color: black;
+.container:hover h1{
+    top:40%;
 }
