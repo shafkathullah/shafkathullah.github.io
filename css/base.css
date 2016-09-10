@@ -8,20 +8,26 @@ body{
     color: whitesmoke;
 }
 header h1{
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: lighter;
     font-size: 6em;
+    letter-spacing: -3px;
 }
 header h3{
     background-color: black;
     display: inline;
     border: 3px solid black;
-    border-radius: 3px;
-    font-family: 'Fjalla One', sans-serif;
-    font-weight: lighter;
-    font-size: 3em;
+    border-radius: 5px;
+    padding-right: 3px;
+    padding-left: 3px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    letter-spacing: 2px;
 }
-
+header{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
 p{
     font-family: 'Inconsolata', monospace;
     font-weight: bold;
@@ -35,4 +41,9 @@ a{
     text-decoration: none;
     padding-right: 3px;
     padding-left: 3px;
+    transition:.2s ease;
+}
+a:hover{
+    color: teal;
+    background-color: whitesmoke;
 }
