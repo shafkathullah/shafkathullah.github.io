@@ -1,52 +1,18 @@
+body{
+    background-color: teal;
+    color: whitesmoke;
+}
+header h1{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+header h3{
+    background-color: black;
+    display: inline;
+    border: 3px solid black;
+    border-radius: 3px;
+    font-family: 'Fjalla One', sans-serif;
+}
 
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-}
-@font-face{
-    font-family: "blowbrush";
-    src: url(../font/blowbrush.otf);
-    font-style: normal;
-    font-weight: normal;
-}
-.container{
-    position: absolute;
-    width:50vw;
-    height:50vh;
-    font-family: "blowbrush";
-    font-size: 1.8em;
-}
-#div1{
-    background-image: url(../Images/watercolor-backgrounds-10.jpg);
-    background-size: cover;
-    
-}
-#div2{
-    background-image: url(../Images/watercolor-backgrounds-11.jpg);
-    background-size: cover;
-    left: 50vw;
-}
-#div3{
-    background-image: url(../Images/watercolor-backgrounds-16.jpg);
-    background-size: cover;
-    top: 50vh;
-}
-#div4{
-    background-image: url(../Images/watercolor-backgrounds-19.jpg);
-    background-size: cover;
-    top: 50vh;
-    left: 50vw;
-}
-.container h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: yellow;
-    transition: .3s ease-in-out;
-}
-.container:hover h1{
-    top:40%;
+p{
+    font-family: 'Inconsolata', monospace;
 }
