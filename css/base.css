@@ -32,6 +32,7 @@ p{
     font-family: 'Inconsolata', monospace;
     font-weight: bold;
     font-size: 2em;
+    width: 100%;
 }
 
 a{
