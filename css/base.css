@@ -1,9 +1,16 @@
+
+*{  margin: 0 0 15px 7px;
+    padding: 0;
+    border: 0;
+}
 body{
     background-color: teal;
     color: whitesmoke;
 }
 header h1{
     font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: lighter;
+    font-size: 6em;
 }
 header h3{
     background-color: black;
@@ -11,8 +18,21 @@ header h3{
     border: 3px solid black;
     border-radius: 3px;
     font-family: 'Fjalla One', sans-serif;
+    font-weight: lighter;
+    font-size: 3em;
 }
 
 p{
     font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+a{
+    border: 1px solid white;
+    border-radius: 3px;
+    color: whitesmoke;
+    text-decoration: none;
+    padding-right: 3px;
+    padding-left: 3px;
 }
