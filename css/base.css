@@ -68,19 +68,17 @@ h3{
 }
 p{
     font-size: 7vw;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 15px;
     font-family: 'Inconsolata';
     font-style: normal;
     font-weight: 700;
 }
-.para{
-    text-align: center;
-}
+
 a{
     text-decoration: none;
     color: whitesmoke;
 }
-h1,h3{
+h1 ,h3, .para{
     margin-left: 10px;
 }
