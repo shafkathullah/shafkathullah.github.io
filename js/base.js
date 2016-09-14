@@ -1,3 +1,3 @@
 $(window).on('load', function() { 
-    $('.veil').hide();
+    $('body').fadeIn(3000);
  });
