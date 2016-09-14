@@ -82,3 +82,33 @@ a{
 h1 ,h3, .para{
     margin-left: 10px;
 }
+a{
+    border: 2px solid whitesmoke;
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+a:hover{
+    color: teal;
+    background-color: whitesmoke;
+}
+@media only screen and (min-width: 768px) {
+    h1{
+        font-size: 9.5vw;
+        margin-top: 40px;
+
+    }
+    h3{
+        font-size: 3vw;
+    }
+    p{
+        font-size: 3.5vw;
+        margin-top: 15px;
+    }
+    .para{
+        margin-top: 70px;
+    }
+    h1 ,h3, .para{
+    margin-left: 30px;
+}
+}
