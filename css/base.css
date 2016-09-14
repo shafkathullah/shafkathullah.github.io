@@ -83,10 +83,11 @@ h1 ,h3, .para{
     margin-left: 10px;
 }
 a{
-    border: 2px solid whitesmoke;
+    border: 1px solid whitesmoke;
+    padding: -4px;
     text-decoration: none;
     color: whitesmoke;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 a:hover{
     color: teal;
@@ -109,6 +110,9 @@ a:hover{
         margin-top: 70px;
     }
     h1 ,h3, .para{
-    margin-left: 30px;
-}
+        margin-left: 30px;
+    }
+    a{
+        border: 2px solid whitesmoke;
+    }
 }
