@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+.row{
+    margin: 10px auto;
+    max-width: 90%;
+}
+.row > div{
+    border: 1px solid black;
+    text-align: center;
+}
+h1{
+    background-color: teal;
+    margin: 0;
+    padding: 200px;
+}
