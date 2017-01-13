@@ -45,7 +45,10 @@ table {
     box-sizing: border-box;
 }
 body{
-    background-color: teal;
+    background-image: url('../image/bg-new.jpg');
+    background-size: cover;
+    background-color: black;
+    background-repeat: no-repeat;
     color: whitesmoke;
 }
 
@@ -76,12 +79,13 @@ p{
     margin-bottom: 15px;
     font-family: 'Inconsolata';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
+    line-height: 50px;
 }
 
 a{
     text-decoration: none;
-    color: whitesmoke;
+    color: transparent;
 }
 h1 ,h3, .para{
     margin-left: 10px;
@@ -92,10 +96,25 @@ a{
     text-decoration: none;
     color: whitesmoke;
     border-radius: 6px;
+    transition: .1s ease-in;
 }
 a:hover{
-    color: teal;
-    background-color: whitesmoke;
+    opacity: .7;
+}
+.social a{
+    background-color: transparent;
+    border: 0;
+    color: whitesmoke;
+    border-radius: 0;
+}
+
+.fa-heart{
+    color: red;
+    font-size: 27px;
+}
+.fa-paint-brush{
+    color: darkorange;
+    font-size: 27px;
 }
 @media only screen and (min-width: 768px) {
     h1{
