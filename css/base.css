@@ -108,13 +108,13 @@ a:hover{
     border-radius: 0;
 }
 
-.fa-heart{
+.fa-heart:before{
     color: red;
-    font-size: 27px;
+    font-size: 24px;
 }
-.fa-paint-brush{
-    color: darkorange;
-    font-size: 27px;
+.fa-paint-brush:before{
+    color: yellow;
+    font-size: 24px;
 }
 @media only screen and (min-width: 768px) {
     h1{
@@ -138,4 +138,10 @@ a:hover{
     a{
         border: 2px solid whitesmoke;
     }
+    .fa-heart:before{
+    font-size: 20px;
+}
+.fa-paint-brush:before{
+    font-size: 20px;
+}
 }
