@@ -108,10 +108,7 @@ a:hover{
     border-radius: 0;
 }
 
-.fa-heart:before{
-    color: red;
-    font-size: 24px;
-}
+
 .fa-paint-brush:before{
     color: yellow;
     font-size: 24px;
@@ -137,9 +134,6 @@ a:hover{
     }
     a{
         border: 2px solid whitesmoke;
-    }
-    .fa-heart:before{
-    font-size: 20px;
     }
     .fa-paint-brush:before{
     font-size: 20px;
