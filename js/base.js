@@ -1,3 +1,4 @@
-$(window).on('load', function() { 
+$(document).ready(function(){
     $('body').fadeIn(3000);
- });
+});
+ 
