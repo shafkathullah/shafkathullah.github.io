@@ -98,16 +98,15 @@ a{
     border-radius: 6px;
     transition: .1s ease-in;
 }
-a:hover{
-    opacity: .7;
-}
 .social a{
     background-color: transparent;
     border: 0;
-    color: whitesmoke;
+    color: lightsteelblue;
     border-radius: 0;
 }
-
+a:hover{
+    color: snow;
+}
 
 .fa-paint-brush:before{
     color: yellow;
