@@ -50,6 +50,7 @@ body{
     background-color: black;
     background-repeat: no-repeat;
     color: whitesmoke;
+    min-height: 100vh;
 }
 
 h1{
