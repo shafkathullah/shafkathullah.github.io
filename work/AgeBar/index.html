@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dynalight" rel="stylesheet">
+    <title>Age Bar</title>
+</head>
+<body>
+    <h4>Enter your date of birth</h4>
+    <div class="row">
+      <input type="date" id="Ultra">
+      <button onclick="trun()">GO !</button>
+    </div>
+    <hr>    
+    <br>
+    <br>
+    <div class="container">
+      <div id="loader"></div>
+    </div>
+    <div class="marking 1"><p>10</p></div>
+    <div class="marking 2"><p>20</p></div>
+    <div class="marking 3"><p>30</p></div>
+    <div class="marking 4"><p>40</p></div>
+    <div class="marking 5"><p>50</p></div>
+    <div class="marking 6"><p>60</p></div>
+    <div class="marking 7"><p>70</p></div>
+    <div class="marking 8"><p>80</p></div>
+    <div class="marking 9"><p>90</p></div>
+    <div class="marking 10"><p>100</p></div>
+    <br>
+    <br>
+    <br>
+    <h2 id="h">1</h2>
+
+    <script>
+      function trun() {
+        var birth = new Date(document.getElementById("Ultra").value);
+        var curr = new Date();
+        var diff = curr.getTime() - birth.getTime();
+        var p = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+        document.getElementById("loader").style.width = p + "%";
+        document.getElementById("h").innerHTML = "Wow..you're "+p+" years old";
+        document.getElementById("h").style.transform = "translate(0,0)";
+      }
+
+    </script>
+</body>
+</html>
