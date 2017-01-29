@@ -45,7 +45,8 @@ table {
     box-sizing: border-box;
 }
 body{
-    background-image: url('../image/bg-new.jpg');
+    background-image: -webkit-linear-gradient(left top, rgb(48,35,174), rgb(200,109,215));
+    background-image: linear-gradient(left top, rgb(48,35,174), rgb(200,109,215));
     background-size: cover;
     background-color: black;
     background-repeat: no-repeat;
