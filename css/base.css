@@ -103,11 +103,7 @@ a{
 .social a{
     background-color: transparent;
     border: 0;
-    color: lightsteelblue;
     border-radius: 0;
-}
-a:hover{
-    color: snow;
 }
 
 .fa-paint-brush:before{
