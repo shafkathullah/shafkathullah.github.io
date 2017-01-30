@@ -25,6 +25,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    width: 95%;
+    margin: 0 auto;
 }
 ol, ul {
 	list-style: none;
@@ -93,12 +95,11 @@ h1 ,h3, .para{
     margin-left: 10px;
 }
 a{
-    border: 1px solid whitesmoke;
+    text-decoration: underline;
     padding: -4px;
-    text-decoration: none;
     color: whitesmoke;
-    border-radius: 6px;
     transition: .1s ease-in;
+    line-height: 3px;
 }
 .social a{
     background-color: transparent;
@@ -128,9 +129,6 @@ a{
     }
     h1 ,h3, .para{
         margin-left: 30px;
-    }
-    a{
-        border: 2px solid whitesmoke;
     }
     .fa-paint-brush:before{
     font-size: 20px;
