@@ -7,14 +7,35 @@
         <style>
             ul li{
                 list-style: none;
+                text-align: left;
+            }
+            h4{
+                text-decoration: underline;
+            }
+            ul{
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+            }
+            .container{
+                width: 80%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            button{
+                display: block;
+                margin: 0 auto;
             }
         </style>
     </head>
     <body>
-        <textarea name="input" id="tt" cols="30" rows="10"></textarea>
-        <button>Submit</button>
-
-        <ul id="output"></ul>
+        <div class="container">
+            <h4>INPUT</h4>
+            <textarea name="input" id="tt" cols="30" rows="10"></textarea>
+            <button>Submit</button>
+            <h4>OUTPUT</h4>
+            <ul id="output"></ul>
+        </div>
         <script type="text/javascript" src="main.js"></script>
     </body>
 </html>
