@@ -110,6 +110,8 @@ $(document).ready(function(){
             final.push(tempo);
         }
                       
+        $("#output").html("<h4>OUTPUT</h4>");
+
         for(i in final){
             var k = parseInt(i)+1;
             var word = final[i].toString().replace(/,/g , " ");
