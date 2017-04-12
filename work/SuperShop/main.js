@@ -31,5 +31,16 @@ $(window, document, undefined).ready(function() {
   $ripples.on('animationend webkitAnimationEnd mozAnimationEnd oanimationend MSAnimationEnd', function(e) {
   	$(this).removeClass('is-active');
   });
+  var it = 0;
+  $('.burger').on('click',function(){
+      if(it%2 == 0){
+        $('.links').css('display','inline-block');
+      }
+      else{
+        $('.links').css('display','none');
+      }
+      it++;
+      
+  });
 
 });
