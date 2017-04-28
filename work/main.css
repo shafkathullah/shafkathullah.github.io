@@ -73,6 +73,7 @@ body{
     background-color: rgba(255, 255, 255, .8);
     font-family: 'Poiret One', cursive;
     font-weight: bold;
+	box-sizing: border-box;
 }
 h1{
     text-align: center;
@@ -117,4 +118,48 @@ a{
 	margin: 0 auto;
 	color: white;
 	font-size: 22px;
+}
+/* TABLET VERSION */
+@media screen and (max-width: 768px) {
+    .container{
+		width: 90%;
+	}
+	h1{
+		font-size: 32px;
+		width: 100%;
+		padding: 10px;
+	}
+	.title{
+		font-size: 28px;
+	}
+	.caption{
+		font-size: 12px;
+	}
+	.more{
+		font-size: 12px;
+	}
+}
+/* PHONE VERSION */
+@media screen and (max-width: 600px) {
+    .container{
+		width: 100%;
+	}
+	h1{
+		font-size: 22px;
+		width: 100%;
+	}
+	.title{
+		font-size: 22px;
+	}
+	.caption{
+		font-size: 18px;
+	}
+	.more{
+		font-size: 18px;
+		width: 70%;
+	}
+	.work{
+		padding: 15px;
+	}
+	
 }

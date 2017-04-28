@@ -47,8 +47,11 @@ table {
     box-sizing: border-box;
 }
 body{
+    /*
     background-image: -webkit-linear-gradient(left top, rgb(48,35,174), rgb(200,109,215));
     background-image: linear-gradient(left top, rgb(48,35,174), rgb(200,109,215));
+    */
+    background-image: url('../image/pic.jpg');
     background-size: cover;
     background-color: black;
     background-repeat: no-repeat;
@@ -63,6 +66,7 @@ h1{
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 300;
+    background-color: rgba(28, 104, 152, 0.66);
     
 }
 h3{
@@ -85,6 +89,7 @@ p{
     font-style: normal;
     font-weight: 500;
     line-height: 50px;
+    background-color: rgba(0, 0, 0, 0.66);
 }
 
 a{
@@ -100,6 +105,9 @@ a{
     color: whitesmoke;
     transition: .1s ease-in;
     line-height: 3px;
+}
+.social {
+    background-color: transparent;
 }
 .social a{
     background-color: transparent;
