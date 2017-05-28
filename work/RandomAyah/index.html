@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Random Ayah</title>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Reem+Kufi" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <h1 id="text"></h1>
+        <h4 id="meaning"></h4>
+        <p id="ref"></p>
+        <script>
+            (function() {
+                var httpRequest = new XMLHttpRequest();
+                var url = "http://api.alquran.cloud/ayah/"+r(1,6236)+"/editions/quran-simple,en.pickthall";
+                if (!httpRequest) {
+                    alert('Giving up :( Cannot create an XMLHTTP instance');
+                    return false;
+                }
+                httpRequest.onreadystatechange = setContent;
+                httpRequest.open('GET', url);
+                httpRequest.send();
+                
+
+                function r(min, max) {
+                    min = Math.ceil(min);
+                    max = Math.floor(max);
+                    return Math.floor(Math.random() * (max - min + 1)) + min;
+                }
+
+                function setContent() {
+                    if (httpRequest.readyState === XMLHttpRequest.DONE) {
+                        if (httpRequest.status === 200) {
+                            var parsed = JSON.parse(httpRequest.responseText);
+                            console.log(parsed);
+                            document.getElementById('text').textContent = parsed.data[0].text;
+                            document.getElementById('meaning').textContent = parsed.data[1].text;
+                            document.getElementById('ref').textContent = parsed.data[1].surah.englishNameTranslation+" "+parsed.data[1].surah.number+":"+parsed.data[1].numberInSurah;
+                        } else {
+                            alert('There was a problem with the request.');
+                        }
+                    }
+                }
+            })();
+        </script>
+    </body>
+</html>
