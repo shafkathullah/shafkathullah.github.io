@@ -139,27 +139,4 @@ a{
 		font-size: 12px;
 	}
 }
-/* PHONE VERSION */
-@media screen and (max-width: 600px) {
-    .container{
-		width: 100%;
-	}
-	h1{
-		font-size: 22px;
-		width: 100%;
-	}
-	.title{
-		font-size: 22px;
-	}
-	.caption{
-		font-size: 18px;
-	}
-	.more{
-		font-size: 18px;
-		width: 70%;
-	}
-	.work{
-		padding: 15px;
-	}
-	
-}
+
