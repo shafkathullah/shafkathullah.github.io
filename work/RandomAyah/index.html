@@ -9,14 +9,14 @@
     </head>
     <body>
         <div class="box">
-            <h1 id="text">-</h1>
-            <h4 id="meaning">-</h4>
-            <p id="ref">-</p>
+            <h1 id="text"></h1>
+            <h4 id="meaning"></h4>
+            <p id="ref"></p>
         </div>
         <script>
             (function() {
                 var httpRequest = new XMLHttpRequest();
-                var url = "http://api.alquran.cloud/ayah/"+r(1,6236)+"/editions/quran-simple,en.pickthall";
+                var url = "http://api.alquran.cloud/ayah/"+r(1,6236)+"/editions/quran-simple,en.sahih";
                 if (!httpRequest) {
                     alert('Giving up :( Cannot create an XMLHTTP instance');
                     return false;
@@ -36,7 +36,6 @@
                     if (httpRequest.readyState === XMLHttpRequest.DONE) {
                         if (httpRequest.status === 200) {
                             var parsed = JSON.parse(httpRequest.responseText);
-                            console.log(parsed);
                             document.getElementById('text').textContent = parsed.data[0].text;
                             document.getElementById('meaning').textContent = parsed.data[1].text;
                             document.getElementById('ref').textContent = parsed.data[1].surah.englishNameTranslation+" "+parsed.data[1].surah.number+":"+parsed.data[1].numberInSurah;
