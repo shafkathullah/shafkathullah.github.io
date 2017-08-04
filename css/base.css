@@ -47,14 +47,14 @@ table {
     box-sizing: border-box;
 }
 body{
-    /*
+    
     background-image: -webkit-linear-gradient(left top, rgb(48,35,174), rgb(200,109,215));
     background-image: linear-gradient(left top, rgb(48,35,174), rgb(200,109,215));
-    */
-    background-image: url('../image/pic.jpg');
+    
+    /* background-image: url('../image/pic.jpg');
     background-size: cover;
     background-color: black;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     color: whitesmoke;
     min-height: 100vh;
 }
@@ -63,7 +63,7 @@ h1{
     font-size: 14vw;
     padding-top: 15px;
     padding-bottom: 15px;
-    font-family: 'Quicksand';
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 300;
     background-color: rgba(28, 104, 152, 0.66);
@@ -85,7 +85,7 @@ p{
     font-size: 7vw;
     padding-top: 20px;
     padding-bottom: 15px;
-    font-family: 'Inconsolata';
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 500;
     line-height: 50px;
