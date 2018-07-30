@@ -269,12 +269,12 @@ a > img {
 
 @media only screen and (max-width: 780px) {
   :root {
-    font-size: 9px;
+    font-size: 8px;
   }
 }
 @media only screen and (max-width: 680px) {
   :root {
-    font-size: 8px;
+    font-size: 7.5px;
   }
 }
 @media only screen and (max-width: 580px) {
@@ -284,12 +284,12 @@ a > img {
 }
 @media only screen and (max-width: 480px) {
   :root {
-    font-size: 6px;
+    font-size: 6.5px;
   }
 }
 
 @media only screen and (max-width: 380px) {
   :root {
-    font-size: 5px;
+    font-size: 6px;
   }
 }
