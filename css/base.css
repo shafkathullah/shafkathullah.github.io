@@ -128,22 +128,26 @@ table {
   border-spacing: 0;
 }
 /* ---------My Code Below--------- */
+:root{
+  font-size: 10px;
+}
+
 .container {
-  width: 42%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  min-width: 600px;
+  max-width: 60rem;
 }
 
 h1 {
-  margin-top: 140px;
+  margin-top: 14.0rem;
   font-family: Poppins;
   font-weight: 900;
-  font-size: 56px;
+  font-size: 5.6rem;
   color: #282828;
-  line-height: 26px;
-  border-bottom: 10px solid #ff6262;
+  line-height: 2.6rem;
+  border-bottom: 1.0rem solid #ff6262;
   align-self: flex-start;
   /* display: inline-block; */
 }
@@ -153,34 +157,34 @@ h2 {
   font-style: normal;
   font-weight: 900;
   line-height: normal;
-  font-size: 24px;
+  font-size: 2.4rem;
   text-transform: uppercase;
   color: #00aced;
-  margin-top: 6px;
+  margin-top: 0.6rem;
 }
 
 h3 {
   font-family: Poppins;
   font-style: normal;
   font-weight: 900;
-  line-height: 15px;
-  font-size: 32px;
+  line-height: 1.5rem;
+  font-size: 3.2rem;
   color: #282828;
-  border-bottom: 7px solid #ff6262;
+  border-bottom: 0.7rem solid #ff6262;
   /* display: inline-block; */
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 8.0rem;
 }
 
 h3 + p {
   font-family: IBM Plex Mono;
   font-style: normal;
   font-weight: 900;
-  line-height: 37px;
-  font-size: 26px;
+  line-height: 3.7rem;
+  font-size: 2.6rem;
   text-align: justify;
-  text-indent: 10px;
-  margin-top: 25px;
+  text-indent: 1.0rem;
+  margin-top: 2.5rem;
   color: #282828;
 }
 
@@ -189,16 +193,16 @@ a.button {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  font-size: 20px;
+  font-size: 2.0rem;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #00aced;
   text-decoration: none;
   display: inline-block;
-  margin: 70px auto 100px auto;
+  margin: 7.0rem auto 10.0rem auto;
   display: flex;
-  width: 200px;
-  height: 50px;
+  width: 20.0rem;
+  height: 5.0rem;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -212,17 +216,18 @@ footer p {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  font-size: 14px;
+  font-size: 1.4rem;
   text-transform: uppercase;
   color: #767676;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 1.0rem;
 }
 
 .link {
   display: flex;
   justify-content: space-evenly;
-  margin: 60px 0;
+  margin: 6.0rem 0;
+  margin-bottom: 4.0rem;
 }
 
 .link li a {
@@ -230,7 +235,7 @@ footer p {
   font-style: normal;
   font-weight: bold;
   line-height: normal;
-  font-size: 20px;
+  font-size: 2.0rem;
   color: #282828;
   text-decoration: none;
 }
@@ -240,4 +245,26 @@ footer p {
 
 p > a{
     color: #00aced;
+}
+
+@media only screen and (max-width: 780px) {
+
+  :root{
+    font-size: 8px;
+  }
+
+}
+@media only screen and (max-width: 680px) {
+
+  :root{
+    font-size: 7px;
+  }
+
+}
+@media only screen and (max-width: 580px) {
+
+  :root{
+    font-size: 6px;
+  }
+
 }
