@@ -128,8 +128,14 @@ table {
   border-spacing: 0;
 }
 /* ---------My Code Below--------- */
-:root{
+:root {
   font-size: 10px;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
 }
 
 .container {
@@ -141,13 +147,13 @@ table {
 }
 
 h1 {
-  margin-top: 14.0rem;
+  margin-top: 14rem;
   font-family: Poppins;
   font-weight: 900;
   font-size: 5.6rem;
   color: #282828;
   line-height: 2.6rem;
-  border-bottom: 1.0rem solid #ff6262;
+  border-bottom: 1rem solid #ff6262;
   align-self: flex-start;
   /* display: inline-block; */
 }
@@ -173,7 +179,7 @@ h3 {
   border-bottom: 0.7rem solid #ff6262;
   /* display: inline-block; */
   margin: 0 auto;
-  margin-top: 8.0rem;
+  margin-top: 8rem;
 }
 
 h3 + p {
@@ -183,7 +189,7 @@ h3 + p {
   line-height: 3.7rem;
   font-size: 2.6rem;
   text-align: justify;
-  text-indent: 1.0rem;
+  text-indent: 1rem;
   margin-top: 2.5rem;
   color: #282828;
 }
@@ -193,22 +199,32 @@ a.button {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  font-size: 2.0rem;
+  font-size: 2rem;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #00aced;
   text-decoration: none;
   display: inline-block;
-  margin: 7.0rem auto 10.0rem auto;
+  margin: 7rem auto 10rem auto;
   display: flex;
-  width: 20.0rem;
-  height: 5.0rem;
+  width: 20rem;
+  height: 5rem;
   align-items: center;
   justify-content: space-evenly;
 }
 
 footer {
+  visibility: hidden;
+}
+
+footer + footer {
+  visibility: visible;
   background-color: #ebebeb;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p {
@@ -220,14 +236,14 @@ footer p {
   text-transform: uppercase;
   color: #767676;
   text-align: center;
-  padding-bottom: 1.0rem;
+  padding-bottom: 1rem;
 }
 
 .link {
   display: flex;
   justify-content: space-evenly;
-  margin: 6.0rem 0;
-  margin-bottom: 4.0rem;
+  margin: 6rem 0;
+  margin-bottom: 4rem;
 }
 
 .link li a {
@@ -235,54 +251,45 @@ footer p {
   font-style: normal;
   font-weight: bold;
   line-height: normal;
-  font-size: 2.0rem;
+  font-size: 2rem;
   color: #282828;
   text-decoration: none;
 }
-.link li a:hover{
-    text-decoration: underline;
+.link li a:hover {
+  text-decoration: underline;
 }
 
-p > a{
-    color: #00aced;
+p > a {
+  color: #00aced;
 }
 
-a > img{
+a > img {
   height: 1.8rem;
 }
 
 @media only screen and (max-width: 780px) {
-
-  :root{
+  :root {
     font-size: 8px;
   }
-
 }
 @media only screen and (max-width: 680px) {
-
-  :root{
+  :root {
     font-size: 7px;
   }
-
 }
 @media only screen and (max-width: 580px) {
-
-  :root{
+  :root {
     font-size: 6px;
   }
-
 }
 @media only screen and (max-width: 480px) {
-
-  :root{
+  :root {
     font-size: 5px;
   }
-
 }
-@media only screen and (max-width: 380px) {
 
-  :root{
+@media only screen and (max-width: 380px) {
+  :root {
     font-size: 4px;
   }
-
 }
