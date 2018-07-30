@@ -247,6 +247,10 @@ p > a{
     color: #00aced;
 }
 
+a > img{
+  height: 1.8rem;
+}
+
 @media only screen and (max-width: 780px) {
 
   :root{
@@ -265,6 +269,20 @@ p > a{
 
   :root{
     font-size: 6px;
+  }
+
+}
+@media only screen and (max-width: 480px) {
+
+  :root{
+    font-size: 5px;
+  }
+
+}
+@media only screen and (max-width: 380px) {
+
+  :root{
+    font-size: 4px;
   }
 
 }
