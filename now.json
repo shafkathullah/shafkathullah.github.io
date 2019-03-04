@@ -1,3 +1,5 @@
 {
-  "alias": ["shafu.xyz"]
+  "version": 2,
+  "alias": ["shafu.xyz"],
+  "builds": [{ "src": "index.html", "use": "@now/static" }]
 }
