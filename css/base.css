@@ -182,7 +182,7 @@ h3 {
   margin-top: 8rem;
 }
 
-h3 + p {
+p {
   font-family: IBM Plex Mono;
   font-style: normal;
   font-weight: 900;
